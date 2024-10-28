@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 1.2em;
+    font-family: "Hachi Maru Pop", cursive;
+} 
+body {
+    background-color: rgba(80, 88, 95, 0.705);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: rgb(145, 144, 146);
+    min-height: 100px;
+    text-align: center;
+    /*выравнивание текста*/
+}
+
+footer {
+    background-color: rgb(145, 144, 146);
+    min-height: 100px;
+    padding: 10px 50px;
+}
+
+.introduction {
+    background-color: rgb(99, 119, 148);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.information {
+    background-color: rgb(127, 145, 204);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.avatar {
+    width: 15rem;
+    display: block; /*делаем картинку блочным элементом*/
+    margin: 0 auto; /*и применяем выравнивание через внешние отступы*/
+    border: 2px dodgerblue solid;
+    border-radius: 10px;
+}
+.photo-img {
+    width: 15rem;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+p {
+    font-size: 1rem;
+    line-height: 2rem;
+} 
+.menu-item {
+    display: inline-block;
+    margin: 10px 15px;
+}
+.content {
+    padding: 10px 50px;
+    background-color: rgb(99, 119, 148);
+}
+a:focus,
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+.information li:nth-child(odd) {
+    background-color: rgb(188, 190, 190);
+}
+.information li:nth-child(even) {
+    background-color: rgb(166, 189, 189);
+}
+h2::after {
+    content: "neew";
+    font-size: 12px;
+    margin-left: 12px;
+    color: red;
+}
+a+p {
+    margin-top: 30px;
+}
+h1, h2, h3, h4, h5, h6, h7 {
+    font-size: 1.2em;
+    text-align: center;
+}
+.photo-img {
+    display: block;
+    margin: 0 auto;
+    border: 5px green;
+}
+.dates {
+    border: 2px solid rgb(24, 49, 87);
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+.dates td, 
+.dates th {
+    border: 2px solid rgb(130, 136, 188);
+    padding: 5px 10px;
+}
+.dates tr:nth-child(odd) {
+    background-color: rgb(212, 212, 217);
+    font-style: italic;
+}
+.dates td:nth-child(1) {
+    background-color: rgb(148, 147, 172);
+    text-align: center;
+}
+.dates tr:nth-child(5) {
+    background-color: rgb(148, 147, 172);
+}
+#contact-form input[type="text"]{
+    height: 20px;
+    width: 250px;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+    background-color: rgb(196, 177, 212);
+    font-style: italic;
+}
+#contact-form input[type="email"] {
+    height: 20px;
+    width: 250px;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+    background-color: rgb(196, 177, 212);
+    font-style: italic;
+}
+select, 
+textarea {
+    min-height: 20px;
+    min-width: 250px;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+    background-color: rgb(196, 177, 212);
+    font-style: italic;
+}
+input[type="date"],
+input[type="tel"],
+input[type="consent"] {
+    height: 20px;
+    width: 250px;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+    background-color: rgb(196, 177, 212);
+    font-style: italic;
+}
+#contact-form input[type="submit"] {
+    height: 50;
+    width: 150px;
+    padding: 10px 20px;
+    background-color: rgb(155, 96, 203);
+    border-top: 2px solid rgb(82, 17, 98);
+    border-bottom: 8px solid rgb(82, 17, 98);
+    border-right: 8px solid rgb(82, 17, 98);
+    border-left: 4px solid rgb(82, 17, 98);
+    color: rgb(82, 17, 98);
+    font-style: normal;
+    font-size: large;
+}
+#contact-form input[type="submit"]:hover {
+    background-color: rgb(196, 177, 212);
+}
+figure{
+    text-align: center;
+}
+.important::after {
+    content: "Важно!";
+    font-size: 12px;
+    margin-left: 12px;
+    color: rgb(236, 82, 82);
+}
+p:lang(en){
+    font-size: 1.2em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(132, 150, 150);
+}
+p::first-line{
+    letter-spacing: 4px;
+}
+.introduction{
+    color: rgb(181, 216, 216);
+} 
+footer img{
+    border: 2px rgb(116, 49, 49) solid;
+}
+figure+p{
+    margin-top: 100px;
+}
+p{
+    font-size: 20px;
+    line-height: 1.5;
+    color: antiquewhite;
+}
+h1{
+    text-decoration: overline;
+    font-style: italic;
+    text-transform: lowercase;
+    font-weight: 100;
+}
+h2{
+    text-decoration: underline;
+    text-transform: none;
+    font-weight: 100;
+}
+h3{
+    text-decoration: dotted;
+    font-style: oblique;
+    text-transform: lowercase;
+    font-weight: bold;
+}
